@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/JesusHR1k/LeafFoodDrops
+build-by-default: true
+branches:
+  - main
+projects:
+  LeafFoodDrops:
+    path: ""
+    icon: icon.png
+...
