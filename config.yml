@@ -1,0 +1,16 @@
+# LeafFoodDrops Config
+# ====================
+# Comidas que pueden soltarse al romper hojas o al decaer.
+
+foods:
+  - { item: BREAD,           min: 1, max: 2 }
+  - { item: COOKED_BEEF,     min: 1, max: 2 }
+  - { item: COOKED_PORKCHOP, min: 1, max: 2 }
+  - { item: COOKED_CHICKEN,  min: 1, max: 2 }
+  - { item: COOKED_MUTTON,   min: 1, max: 2 }
+  - { item: COOKED_COD,      min: 1, max: 2 }
+  - { item: COOKED_SALMON,   min: 1, max: 2 }
+  - { item: BAKED_POTATO,    min: 1, max: 2 }
+
+# Si activas esto en true, verás mensajes de depuración en consola cada vez que caiga comida.
+debug-log: false

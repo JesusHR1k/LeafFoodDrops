@@ -1,0 +1,6 @@
+name: LeafFoodDrops
+main: Retro\LeafFoodDrops\Main
+version: 1.1.0
+api: 5.0.0
+author: JesusHR2002
+description: Causes tree leaves to drop food by breaking them 
