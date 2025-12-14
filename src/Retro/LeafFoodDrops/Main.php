@@ -40,19 +40,15 @@ final class Main extends PluginBase implements Listener {
 
             $player = $e->getPlayer();
             if($player->isCreative()){
-              
                 $pos = $block->getPosition()->add(0.5, 0.5, 0.5);
                 $block->getPosition()->getWorld()->dropItem($pos, $food);
                 return;
             }
 
-       
             $drops = $e->getDrops();
             $drops[] = $food;
             $e->setDrops($drops);
         }, EventPriority::HIGHEST, $this, false);
-
-        $this->getLogger()->info("✅ LeafFoodDrops ready (only when breaking leaves).");
     }
 
     /**
@@ -63,23 +59,20 @@ final class Main extends PluginBase implements Listener {
      * - drops vanilla con SAPLING/APPLE/STICK
      */
     private function isLeafHeuristic(Block $block, array $defaultDrops) : bool {
-      
+
         if($block instanceof Leaves){
             return true;
         }
-
 
         $short = strtolower((new \ReflectionClass($block))->getShortName());
         if(str_contains($short, "leaves") || str_contains($short, "leaf") || str_contains($short, "hojas") || str_contains($short, "hoja")){
             return true;
         }
 
-
         $visible = strtolower($block->getName());
         if(str_contains($visible, "leaf") || str_contains($visible, "hoja") || str_contains($visible, "bush") || str_contains($visible, "arbusto")){
             return true;
         }
-
 
         foreach($defaultDrops as $it){
             if(!$it instanceof Item) continue;
