@@ -37,14 +37,7 @@ You can edit config.yml to change the drop chance or add new items.
 📦 Installation
 
 Download the latest .phar from Poggit
-.
-
 Place it inside the plugins/ folder of your PocketMine-MP 5 server.
-
-Restart the server.
-
-If you see this line in console:
-[Server thread/INFO]: [LeafFoodDrops] ✅ Plugin enabled successfully!
 
 🧠 Author
 
