@@ -1,0 +1,62 @@
+enabled: true
+
+# - Plugin language:
+#   - en = English (default)
+#   - es = Spanish
+language: en
+
+# - Drop chance (0.0 to 1.0)
+#   - 0.03 = 3% (low)
+#   - 0.06 = 6% (normal)
+#   - 0.10 = 10% (high)
+chance: 0.06
+
+# - Amount dropped per successful roll
+count_min: 1
+count_max: 1
+
+# - If the player is in creative:
+#   - true = drop the item on the ground
+#   - false = drop nothing
+creative_drop: true
+
+# - Enable/disable per world:
+#   - If a world is NOT listed here, it defaults to ON (true)
+#   - Commands:
+#     - /lf on <world>
+#     - /lf off <world>
+worlds:
+  world: true
+  lobby: false
+
+# - Foods (RAW) with weights:
+#   - Higher weight = higher probability
+#   - You can use "minecraft:beef" or "beef"
+foods:
+  minecraft:apple: 8
+  minecraft:beef: 4
+  minecraft:chicken: 4
+  minecraft:porkchop: 4
+  minecraft:mutton: 3
+  minecraft:rabbit: 2
+  minecraft:potato: 4
+  minecraft:carrot: 5
+  minecraft:beetroot: 4
+
+# - Plugin messages per language
+# - Placeholders:
+#   - {world} = world name
+#   - {state} = ON/OFF
+messages:
+  en:
+    no_permission: "§cYou don't have permission."
+    usage: "§cUsage: §f/lf <on|off> <world>"
+    toggled: "§aLeafFoodDrops in §f{world} §a=> {state}"
+    state_on: "§aON"
+    state_off: "§cOFF"
+  es:
+    no_permission: "§cNo tienes permiso."
+    usage: "§cUso: §f/lf <on|off> <mundo>"
+    toggled: "§aLeafFoodDrops en §f{world} §a=> {state}"
+    state_on: "§aON"
+    state_off: "§cOFF"
