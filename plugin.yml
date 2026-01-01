@@ -1,6 +1,16 @@
 name: LeafFoodDrops
 main: Retro\LeafFoodDrops\Main
-version: 1.1.1
+version: 1.2.0
 api: 5.0.0
-author: HR1K
-description: Causes tree leaves to drop food by breaking them 
+author: JesusHR1K
+description: Drops random RAW food from leaves with configurable chance and per-world toggle.
+
+commands:
+  lf:
+    description: Enable or disable LeafFoodDrops per world
+    usage: "/lf <on|off> <world>"
+    permission: leafdrops.admin
+
+permissions:
+  leafdrops.admin:
+    default: op
